@@ -146,3 +146,32 @@ document.getElementById('meter-convert5').addEventListener('click', function () 
     const miterTextConvert = document.getElementById('meter-text-convert5');
     miterTextConvert.innerHTML = 'm<sup>2</sup>';
 })
+
+document.getElementById('ellipse-btn').addEventListener('click', function () {
+    // console.log('clicked');
+    const ellipseA = getElementsById('ellipse-a');
+    // console.log(triangleB);
+    const ellipseB = getElementsById('ellipse-b');
+    // console.log(triangleH);
+
+    const ellipseTextA = getElementsByIdText('ellipse-text-a');
+    setTextElementsById('ellipse-text-a', ellipseA)
+
+    const ellipseTextB = getElementsByIdText('ellipse-text-b');
+    setTextElementsById('ellipse-text-b', ellipseB);
+
+    const ellipseOutput = (3.1416 * ellipseA * ellipseB).toFixed(2);
+    console.log(ellipseOutput);
+
+    const PentagonO = getElementsByIdText('ellipse-output');
+    setTextElementsById('ellipse-output', ellipseOutput);
+})
+
+document.getElementById('meter-convert6').addEventListener('click', function () {
+    const meterConvert = getElementsByIdText('ellipse-output');
+    const meterOutput = (meterConvert / 100).toFixed(2);
+    setTextElementsById('ellipse-output', meterOutput);
+
+    const miterTextConvert = document.getElementById('meter-text-convert6');
+    miterTextConvert.innerHTML = 'm<sup>2</sup>';
+})
