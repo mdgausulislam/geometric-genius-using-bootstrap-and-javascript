@@ -84,3 +84,65 @@ document.getElementById('meter-convert3').addEventListener('click', function () 
     const miterTextConvert = document.getElementById('meter-text-convert2');
     miterTextConvert.innerHTML = 'm<sup>2</sup>';
 })
+
+
+
+
+document.getElementById('rhombus-btn').addEventListener('click', function () {
+    // console.log('clicked');
+    const rhombusD1 = getElementsById('rhombus-d1');
+    // console.log(triangleB);
+    const rhombusD2 = getElementsById('rhombus-d2');
+    // console.log(triangleH);
+
+    const rhombusTextD1 = getElementsByIdText('rhombus-text-d1');
+    setTextElementsById('rhombus-text-d1', rhombusD1)
+
+    const rhombusTextD2 = getElementsByIdText('rhombus-text-d2');
+    setTextElementsById('rhombus-text-d2', rhombusD2);
+
+    const rhombusOutput = 0.5 * rhombusD1 * rhombusD2;
+    console.log(rhombusOutput);
+
+    const rhombusO = getElementsByIdText('rhombus-output');
+    setTextElementsById('rhombus-output', rhombusOutput);
+})
+
+document.getElementById('meter-convert4').addEventListener('click', function () {
+    const meterConvert = getElementsByIdText('rhombus-output');
+    const meterOutput = meterConvert / 100;
+    setTextElementsById('rhombus-output', meterOutput);
+
+    const miterTextConvert = document.getElementById('meter-text-convert3');
+    miterTextConvert.innerHTML = 'm<sup>2</sup>';
+})
+
+
+document.getElementById('Pentagon-btn').addEventListener('click', function () {
+    // console.log('clicked');
+    const PentagonP = getElementsById('Pentagon-p');
+    // console.log(triangleB);
+    const PentagonB = getElementsById('Pentagon-b');
+    // console.log(triangleH);
+
+    const pentagonTextP = getElementsByIdText('pentagon-text-p');
+    setTextElementsById('pentagon-text-p', PentagonP)
+
+    const pentagonTextB = getElementsByIdText('pentagon-text-b');
+    setTextElementsById('pentagon-text-b', PentagonB);
+
+    const PentagonOutput = 0.5 * PentagonP * PentagonB;
+    console.log(PentagonOutput);
+
+    const PentagonO = getElementsByIdText('pentagon-output');
+    setTextElementsById('pentagon-output', PentagonOutput);
+})
+
+document.getElementById('meter-convert5').addEventListener('click', function () {
+    const meterConvert = getElementsByIdText('pentagon-output');
+    const meterOutput = meterConvert / 100;
+    setTextElementsById('pentagon-output', meterOutput);
+
+    const miterTextConvert = document.getElementById('meter-text-convert5');
+    miterTextConvert.innerHTML = 'm<sup>2</sup>';
+})
