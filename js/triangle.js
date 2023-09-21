@@ -175,3 +175,7 @@ document.getElementById('meter-convert6').addEventListener('click', function () 
     const miterTextConvert = document.getElementById('meter-text-convert6');
     miterTextConvert.innerHTML = 'm<sup>2</sup>';
 })
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href='index2.html';
+})
