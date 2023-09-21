@@ -6,8 +6,10 @@ document.getElementById('btn-triangle').addEventListener('click',function(){
     console.log(triangleH);
 
     const triangleTextB=getElementsByIdText('triangle-text-b');
+    setTextElementsById('triangle-text-b',triangleB)
     
     const triangleTextH=getElementsByIdText('triangle-text-h');
-
+    
+    setTextElementsById('triangle-text-h',triangleH);
     
 })

@@ -11,3 +11,7 @@ function getElementsByIdText(elementText){
     const newTriangleItemsText=parseFloat(newTriangleItemsTextString);
     return newTriangleItemsText;
 }
+function setTextElementsById(setElements,newValue){
+    const textElements=document.getElementById(setElements);
+    textElements.innerText=newValue;
+}
