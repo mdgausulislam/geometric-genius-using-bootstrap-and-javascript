@@ -7,9 +7,14 @@ document.getElementById('btn-triangle').addEventListener('click',function(){
 
     const triangleTextB=getElementsByIdText('triangle-text-b');
     setTextElementsById('triangle-text-b',triangleB)
-    
+
     const triangleTextH=getElementsByIdText('triangle-text-h');
-    
     setTextElementsById('triangle-text-h',triangleH);
+
+    const triangleOutput=0.5*triangleB*triangleH;
+    console.log(triangleOutput);
+
+    const triangleO=getElementsByIdText('triangle-Output');
+    setTextElementsById('triangle-Output',triangleOutput);
     
 })
