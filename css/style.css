@@ -1,4 +1,26 @@
-.bg-color{
+.bg-color {
     border-radius: 8px;
     background: rgba(16, 144, 216, 0.10);
+}
+
+.input-type {
+    width: 95px;
+    height: 32px;
+    border-radius: 4px;
+    background: #F1F1F1;
+}
+
+.bg-color1 {
+    border-radius: 8px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FBBCED;
+}
+
+.bg-color2 {
+    border-radius: 8px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #69C7F0;
+}
+.width-lg{
+    width: 437px;
 }
