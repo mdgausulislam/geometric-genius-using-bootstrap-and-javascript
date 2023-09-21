@@ -28,11 +28,11 @@ document.getElementById('meter-convert').addEventListener('click', function () {
 })
 
 document.getElementById('rectangle-btn').addEventListener('click', function () {
-    console.log('clicked');
+    // console.log('clicked');
     const rectangleW = getElementsById('rectangle-w');
-    console.log(rectangleW);
+    // console.log(rectangleW);
     const rectangleI = getElementsById('rectangle-i');
-    console.log(rectangleI);
+    // console.log(rectangleI);
 
     const rectangleTextB = getElementsByIdText('rectangle-text-w');
     setTextElementsById('rectangle-text-w', rectangleW)
@@ -53,5 +53,34 @@ document.getElementById('meter-convert1').addEventListener('click', function () 
     setTextElementsById('rectangle-Output', meterOutput);
 
     const miterTextConvert = document.getElementById('meter-text-convert1');
+    miterTextConvert.innerHTML = 'm<sup>2</sup>';
+})
+
+document.getElementById('Parallelogram-btn').addEventListener('click', function () {
+    console.log('clicked');
+    const parallelogramB = getElementsById('parallelogram-b');
+    console.log(parallelogramB);
+    const parallelogramH = getElementsById('parallelogram-h');
+    console.log(parallelogramH);
+
+    const parallelogramTextWw = getElementsByIdText('parallelogram-text-w');
+    setTextElementsById('parallelogram-text-w', parallelogramB)
+
+    const parallelogramTextI = getElementsByIdText('parallelogram-text-i');
+    setTextElementsById('parallelogram-text-i', parallelogramH);
+
+    const parallelogramOutput = parallelogramB * parallelogramH;
+    console.log(parallelogramOutput);
+
+    const rectangleO = getElementsByIdText('parallelogram-output');
+    setTextElementsById('parallelogram-output', parallelogramOutput);
+})
+
+document.getElementById('meter-convert3').addEventListener('click', function () {
+    const meterConvert = getElementsByIdText('parallelogram-output');
+    const meterOutput = meterConvert / 100;
+    setTextElementsById('parallelogram-output', meterOutput);
+
+    const miterTextConvert = document.getElementById('meter-text-convert2');
     miterTextConvert.innerHTML = 'm<sup>2</sup>';
 })
